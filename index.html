@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Javascript POO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header><h1>Versão 1.0 da loja virtual</h1></header>
+   <main>
+      <div style="display: flex;flex-direction: column;margin:0 auto; align-items: center;">
+        <div class="title">
+            
+            <h2>Lista de produtos da minha loja</h2>
+        </div>
+        <div class="card">
+            <div class="LineInput">
+                <label>Produto</label>
+                <input type="text" id="Produto" placeholder="Nome do produto">
+            </div>
+            <div class="LineInput">
+             <label>Preço</label>
+             <input  oninput="validity.valid||(value='');" type="number"  id="preco" placeholder="Valor do produto">
+         </div>
+         <button type="button" onclick="salvar()" id="btn_1">Salvar</button>
+         <button type="button" onclick="cancelar()">Cancelar</button>
+        </div>
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </thead>
+            </table>
+        </div>
+      </div>
+       
+   
+   </main>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
